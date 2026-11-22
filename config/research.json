@@ -1,0 +1,27 @@
+{
+  "timezone": "UTC",
+  "sensor_interval_seconds": 30,
+  "prediction_step_seconds": 150,
+  "event_min_duration_seconds": 120,
+  "alternative_event_durations_seconds": [0, 300],
+  "max_measurement_age_median_multiplier": 2,
+  "horizons_minutes": [5, 10, 15],
+  "windows_minutes": [5, 10, 15],
+  "threshold_candidates_c": [0.5, 1, 1.5, 2],
+  "rf_candidates": {
+    "n_estimators": [100, 200],
+    "max_depth": [5, 10, null],
+    "min_samples_leaf": [1, 5, 10]
+  },
+  "random_seed": 42,
+  "random_seed_note": "Tekrarlanabilirlik için uygulama tercihi; formda sayısal tohum belirtilmemiştir.",
+  "split": {
+    "train_periods": ["T2", "T3"],
+    "validation_period": "T4",
+    "test_period": "T5",
+    "validation_start_utc": "2025-03-13T10:00:00Z",
+    "test_start_utc": "2025-03-17T11:00:00Z"
+  },
+  "minimum_intervention_seconds": null,
+  "selected_horizon_minutes": null
+}
