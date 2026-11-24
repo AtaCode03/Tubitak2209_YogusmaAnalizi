@@ -1,0 +1,27 @@
+SHT45 ayarlanabilir stand taslağı
+
+Ön tasarım, kutunun 173 mm iç yüksekliğe sahip olduğu varsayımıyla hazırlandı.
+Standın dış ölçüsü 76 × 55 × 105 mm, taban kalınlığı 4 mm. Tabanı sabitlemek
+için dört adet 3,6 mm çapında yuvarlak geçişli vida deliği vardır. Delik merkezleri
+52 × 33 mm dikdörtgen oluşturur. İlk ölçü M3 vida ve pul içindir.
+Dikey montaj
+yuvası tabandan 20–95 mm arasında ve 3,6 mm genişliğinde. Yuvarlak vida
+başının yuvadan geçmemesi için uygun pul kullanılır. Yuva aralığı taşıyıcı
+vida içindir; sensör açıklığının gerçek yüksekliği, uç parçasının konumuna
+ve sensörün kart üzerindeki yerine bağlıdır.
+
+Birinci parça, kutu tabanında duran ayarlanabilir standdır. STL bu parçayı
+içerir. İkinci parça, standa tek vida ve pulla takılacak kart adaptörüdür.
+Adaptör kartı iki montaj deliğinden tutar. Kart geldiğinde delik çapı,
+merkez aralığı ve soketin kablo boşluğu ölçülerek adaptör modellenir.
+
+Baskı öncesi 76 × 55 mm taban için kutuda yer olup olmadığı kontrol edilir.
+Vidalar kutu tabanından geçecekse yalıtım ve sızdırmazlık dikkate alınır.
+Stand vidalanabilen ayrı bir iç plaka üzerine de sabitlenebilir.
+Taban geniş yüzüyle baskı tablasına yatırılır. Baskı sonrası kutunun içinde
+kapak hareketi, kablo boşluğu ve standın sallanmadığı kontrol edilir.
+Sensör açıklığı engellenmeden elma orta hizasına ayarlanır. Elmaya, buz
+şişesine ve kutu duvarına olan mesafeler ilk kurulumda kaydedilir.
+
+Model milimetre cinsindedir. Ölçüler gerektiğinde build_stand.py seçenekleri
+ile güncellenebilir. Kart adaptörü ve fiziksel uyum bu ilk taslakta doğrulanmamıştır.

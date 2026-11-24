@@ -1,0 +1,8 @@
+{
+  "t4_risk_events": 26,
+  "common_event_candidates": 25,
+  "five_physical_measurements_required": true,
+  "synthetic_snapshot_check": "passed",
+  "frozen_model_integrity_check": "passed",
+  "selected_horizon_minutes": null
+}

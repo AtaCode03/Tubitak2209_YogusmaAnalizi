@@ -1,0 +1,12 @@
+USB seri alıcı ve canlı izleme benzetimi
+Durum kaydı: 24 Kasım 2026
+Sonuç raporu bölümü: Rapor dönemlerinde yapılan çalışmalar
+Başvuru dayanağı: §2.1, §2.8, §2.9 ve İP4
+
+ESP32 ile bilgisayar arasındaki tek satırlık, sabit üst uzunluklu seri mesaj tanımlandı. Mesajda sıra numarası, çalışma süresi, üç ölçüm ve serbest heap alanı bulunur. Bilgisayarda satır biçimi ve ölçüm değerleri doğrulanır, UTC zaman damgası eklenir. Canlı ekran ölçüm akışının durumunu, kayıp paketleri, reddedilen paketleri ve bildirilen en düşük boş RAM'i gösterir.
+
+Benzetimde 82 paket konumunun üçü bilinçli olarak atlandı. 79 ölçüm benzetim veritabanına kaydedildi. Bağlantı geri geldiğinde geçmiş pencere sıfırlandı. İlk doğrusal eğim kararı, bağlantı geri geldikten 16 dakika 30 saniye sonra üretildi. Ana deney veritabanına benzetim kaydı eklenmedi.
+
+38 yazılım testi geçti. Bu adımın kanıtı bilgisayardaki alıcı ve ekran benzetimidir. Gerçek sensör bağlantısı, ESP32 firmware yüklemesi, fiziksel ölçüm sürekliliği ve kartın serbest RAM ölçümü düzenek hazır olduğunda doğrulanacaktır.
+
+Kanıt ve protokol: 03_Tablolar_ve_Kanitlar/Adim_10_seri_akis_benzetimi.json ve firmware/USB_Protokolu.txt.

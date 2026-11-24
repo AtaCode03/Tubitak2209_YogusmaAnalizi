@@ -9,20 +9,28 @@ class AppTests(unittest.TestCase):
         app = AppTest.from_file(str(Path(__file__).resolve().parents[1] / "app.py"))
         app.run(timeout=30)
         self.assertEqual(len(app.exception), 0)
-        app.button[0].click().run(timeout=30)
+        next(button for button in app.button if button.label == 'Hesapla').click().run(timeout=30)
         self.assertEqual(len(app.exception), 0)
-        self.assertEqual(app.metric[0].value, "9.261 °C")
-        self.assertEqual(app.metric[1].value, "-1.261 °C")
-        self.assertEqual(app.info[0].value, "Mevcut yoğuşma riski")
+        self.assertIn("9.261 °C", [metric.value for metric in app.metric])
+        self.assertIn("-1.261 °C", [metric.value for metric in app.metric])
+        self.assertIn("Mevcut yoğuşma riski", [notice.value for notice in app.info])
 
     def test_invalid_temperature_shows_error(self):
         app = AppTest.from_file(str(Path(__file__).resolve().parents[1] / "app.py"))
         app.run(timeout=30)
         app.number_input[0].set_value(-300.0)
-        app.button[0].click().run(timeout=30)
+        next(button for button in app.button if button.label == 'Hesapla').click().run(timeout=30)
         self.assertEqual(len(app.exception), 0)
         self.assertEqual(len(app.error), 1)
-        self.assertEqual(len(app.metric), 0)
+        self.assertNotIn('9.261 °C', [metric.value for metric in app.metric])
+
+    def test_other_screens_open(self):
+        app = AppTest.from_file(str(Path(__file__).resolve().parents[1] / 'app.py')).run(timeout=30)
+        for page in ('Deney yönetimi', 'Geçmiş kayıtlar', 'Yöntem karşılaştırması'):
+            with self.subTest(page=page):
+                app.sidebar.radio[0].set_value(page).run(timeout=30)
+                self.assertEqual(len(app.exception), 0)
+                self.assertEqual(app.title[0].value, page)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,12 @@
+Bağımsız T5 değerlendirmesinin yazılım hazırlığı
+Durum kaydı: 24 Kasım 2026
+Sonuç raporu bölümü: Rapor dönemlerinde yapılan çalışmalar
+Başvuru dayanağı: §2.10.1–2.10.4 ve İP5
+
+Sabitlenmiş model ve ayarları kullanarak üç tahmin süresinde aynı T5 kayıtları üzerinde kesinlik, duyarlılık, F1, yanlış alarm dönemi ve erken uyarı ölçütleri üreten değerlendirme kodu hazırlandı. Ortak geçmiş veya takip koşulunu sağlamayan uyarılar ayrı kaydedilir. Duyarlılık kontrolünde 0, 120 ve 300 saniyelik olay koşullarına göre olay ve referans etiket sayıları hesaplanır.
+
+Random Forest ve eşik F1 farkı için sensörleri ve yöntemleri aynı zaman bloğunda birlikte taşıyan 2.000 tekrarlı bootstrap analizi eklendi. Ana analiz tam 24 saatlik blokları, duyarlılık analizi 48 saatlik blokları kullanır. İki blok uzunluğunu karşılaştırırken aynı zaman kesiti uygulanır.
+
+44 yazılım testi geçti. İki yapay sensör serisinde olaylar, tahmin dosyaları ve blok raporu uçtan uca doğrulandı. Gerçek T5 üzerinde başarı hesabı ve deney kutusu değerlendirmesi bu hazırlıkta yapılmadı.
+
+Kanıt: 03_Tablolar_ve_Kanitlar/Adim_12_T5_yazilim_dogrulamasi.json.

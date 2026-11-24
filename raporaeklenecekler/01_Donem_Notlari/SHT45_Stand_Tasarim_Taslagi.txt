@@ -1,0 +1,9 @@
+SHT45 sensör standı ön tasarımı
+
+Başvuru dayanağı: §2.1. Ürün, kutu yüzeyi ve soğutucu şişelere temas etmeden ortam havasını ölçmek için taban üzerinde duran ayarlanabilir bir sensör standı tasarlandı. İlk STL taban ve kolu içerir. Taslak dış ölçüsü 76 × 55 × 105 mm, taşıyıcı vida yuvası 20–95 mm aralığındadır. Tasarımda 173 mm kutu iç yüksekliği varsayıldı.
+
+Kartın iki montaj deliğinden bağlanacağı uç adaptörü, PCB geldikten ve delikler ölçüldükten sonra tamamlanacaktır. STL kapalı yüzey kontrolünden geçti. Baskı, kutuya sığma ve deney konumu henüz fiziksel olarak doğrulanmadı. Son montajda elmaya, buz şişelerine ve kutu duvarına olan mesafeler fotoğrafla birlikte kaydedilecektir.
+
+Dosya: hardware/sht45_stand/SHT45_stand_taban_kol.stl.
+
+Taban güncellemesi: Dört adet 3,6 mm çapında yuvarlak geçişli montaj deliği eklendi. Delik merkezleri en yönünde 52 mm, boy yönünde 33 mm aralıklıdır. Taban dış ölçüsü korunmuştur.

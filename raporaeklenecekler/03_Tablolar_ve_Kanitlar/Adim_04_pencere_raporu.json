@@ -1,0 +1,47 @@
+{
+  "train": {
+    "positive_dpu_grid_steps": 185582,
+    "window_5m": 172071,
+    "window_10m": 161195,
+    "window_15m": 151830,
+    "common_5m_negative": 140943,
+    "common_10m_negative": 134388,
+    "common_15m_negative": 128572,
+    "common_15m_incomplete_followup": 23040,
+    "common_10m_incomplete_followup": 17282,
+    "common_5m_incomplete_followup": 10794,
+    "common_15m_positive": 218,
+    "common_10m_positive": 160,
+    "common_5m_positive": 93
+  },
+  "validation": {
+    "positive_dpu_grid_steps": 17977,
+    "window_5m": 17905,
+    "window_10m": 17833,
+    "window_15m": 17762,
+    "common_5m_negative": 17618,
+    "common_10m_negative": 17501,
+    "common_15m_negative": 17383,
+    "common_15m_incomplete_followup": 236,
+    "common_10m_incomplete_followup": 166,
+    "common_5m_incomplete_followup": 96,
+    "common_15m_positive": 143,
+    "common_10m_positive": 95,
+    "common_5m_positive": 48
+  },
+  "test": {
+    "positive_dpu_grid_steps": 152096,
+    "window_5m": 150547,
+    "window_10m": 149046,
+    "window_15m": 147568,
+    "common_5m_negative": 145089,
+    "common_10m_negative": 143266,
+    "common_15m_negative": 141474,
+    "common_15m_incomplete_followup": 4864,
+    "common_10m_incomplete_followup": 3459,
+    "common_5m_incomplete_followup": 2038,
+    "common_15m_positive": 1230,
+    "common_10m_positive": 843,
+    "common_5m_positive": 441
+  }
+}

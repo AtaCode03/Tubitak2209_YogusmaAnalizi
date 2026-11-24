@@ -1,0 +1,12 @@
+Kayıt oynatma ile tahmin akışının doğrulanması
+Durum kaydı: 24 Kasım 2026
+Sonuç raporu bölümü: Rapor dönemlerinde yapılan çalışmalar
+Başvuru dayanağı: §2.7, §2.8, §2.9 ve İP3
+
+T4.LoraA serisinin ilk 500 satırı özgün UTC zaman sırasıyla işleme alındı. Ölçümler doğrulandı ve çiğ noktası ile DPU tekrar hesaplandı. Çevrimdışı özellik üretiminde kullanılan aynı 150 saniyelik pencere kodu kayıt oynatmaya bağlandı. Geçersiz satırda veya uzun zaman boşluğunda geçmiş pencere sıfırlandı. Tahminler dayanak ölçüme ve yöntem ayarına bağlandı.
+
+15 dakikalık aday ayarı kullanılarak 499 geçerli ölçüm ve toplam 519 karar ayrı oynatma veritabanına kaydedildi. Eşik 185, doğrusal eğim 167 ve Random Forest 167 karar üretti. Doğrusal eğim 20 risk kararı üretti. Risk kararının arayüzde ilk gösterilme zamanı bu aşamada boş bırakıldı. Oynatma verileri ana deney veritabanına aktarılmadı.
+
+Çevrimdışı doğrulama ile örtüşen 153 ortak adımda üç yöntemin kararları bire bir eşleşti. Bu çalışma yazılım akışının tutarlılığını doğrular. Seçilen örnek tahmin süresi canlı sistem tercihi olarak kullanılmadı.
+
+Doğrulama: 31 yazılım testi geçti. Kanıt: 03_Tablolar_ve_Kanitlar/Adim_08_kayit_oynatma_dogrulamasi.json.

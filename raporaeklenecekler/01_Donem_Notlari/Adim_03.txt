@@ -1,0 +1,23 @@
+Risk olayları ve referans etiketleri
+Durum kaydı: 23 Kasım 2026
+Sonuç raporu bölümü: Rapor dönemlerinde yapılan çalışmalar
+Başvuru dayanağı: §2.4.2, §2.4.3 ve İP1
+
+Her sensör serisinde negatif DPU'nun en az 120 saniyeye yayıldığı kesintisiz diziler belirlendi. İlk negatif ölçüm, süre koşulunun ilk doğrulandığı ölçüm ve son negatif ölçüm ayrı kaydedildi. Sıfır veya pozitif DPU, geçersiz satır ve seri medyan ölçüm aralığının iki katını aşan boşluk diziyi kesti. Medyan aralık için geçersiz satırların özgün zamanları da korundu.
+
+Pozitif DPU içeren ham ölçüm anlarında 5, 10 ve 15 dakika için referans etiketleri üretildi. Hedef aralığın hemen sonunda başlayabilecek bir olay için takip kapsaması, hedef süre ve olay süresi koşulunun toplamına kadar denetlendi. Takip verisi eksik ya da pencere bölüm dışına taşıyorsa etiket boş bırakıldı ve nedeni kaydedildi. 0 ve 300 saniyelik süre koşulları ayrıca özetlendi.
+
+Bölüm           0 sn olay   120 sn olay   300 sn olay
+Eğitim                190            78            48
+Doğrulama              42            26            15
+Test                  815           312           206
+
+Ana koşulda ölçüm anı bazında pozitif etiketler
+Bölüm             5 dk     10 dk     15 dk
+Eğitim             163       331       475
+Doğrulama           119       244       356
+Test              1.081     2.142     3.166
+
+Sayılar sensör serisi bazındaki DPU olaylarını ve ham ölçüm etiketlerini gösterir. 150 saniyelik ortak adımlar ve geçmiş pencere koşulları uygulandıktan sonra karşılaştırma örnekleri ayrıca sayılacaktır. T5 model başarısı bağımsız değerlendirme aşamasında hesaplanacaktır.
+
+Doğrulama: 20 yazılım testi geçti. Kanıt: 03_Tablolar_ve_Kanitlar/Adim_03_etiket_raporu.json.

@@ -1,0 +1,20 @@
+Tahmin yöntemlerinin T4 doğrulaması ve parametre araması
+Durum kaydı: 24 Kasım 2026
+Sonuç raporu bölümü: Rapor dönemlerinde yapılan çalışmalar
+Başvuru dayanağı: §2.5.3, §2.6, §2.10.1 ve §2.10.2
+
+Her tahmin süresi için 4 güvenlik payı, 3 doğrusal eğim penceresi ve 54 Random Forest ayarı değerlendirildi. Random Forest modelleri, ilgili pencere ve hedef etiketi bulunan T2–T3 kayıtlarıyla, sabit 42 tohumu kullanılarak eğitildi. T4 yalnızca doğrulama ve ayar seçiminde kullanıldı. Her süre için üç yöntem aynı T4 kayıtlarında puanlandı.
+
+Seçim sırası F1, duyarlılık, 24 sensör saati başına yanlış alarm dönemi ve başvuruda belirtilen yöntem tercihleri olarak uygulandı. Sayaçlar ortak T4 adımları üzerinden hesaplandı. Ardışık risk kararları aynı sensör serisinde 150 saniye arayla geliyorsa bir uyarı dönemi sayıldı. Yanlış alarm değerlendirmesi dönemin ilk adımındaki referans etiketine dayandı.
+
+T4 doğrulama F1 sonuçları
+Süre       Eşik      Eğim      Random Forest
+5 dk     0,0091    0,0332            0,0000
+10 dk    0,0177    0,0337            0,0000
+15 dk    0,0264    0,0456            0,0138
+
+Her sürede eşik güvenlik payı 0,5 °C ve doğrusal eğim penceresi 15 dakika seçildi. Random Forest için 5 ve 10 dakika tahminlerinde 5 dakika geçmiş, 100 ağaç, 5 derinlik ve yaprak başına 10 örnek seçildi. 15 dakika tahmininde 15 dakika geçmiş, 100 ağaç, sınırsız derinlik ve yaprak başına 1 örnek seçildi.
+
+T4 F1 değerleri üç yöntemde de düşüktür. Doğrusal eğim bu doğrulama verisinde üç sürede de en yüksek F1 değerini verdi. Bağımsız T5 testi ve deney kutusu değerlendirmesi sonraki aşamalarda yapılacaktır. Canlı sistemin ortak tahmin süresi müdahale süresi ölçüldükten sonra seçilecektir.
+
+28 yazılım testi geçti. Kaydedilen üç model yeniden yüklenerek T4 kararlarının dosyadaki kararlarla aynı olduğu doğrulandı. Kanıt: 03_Tablolar_ve_Kanitlar/Adim_06_T4_parametre_aramasi.json.

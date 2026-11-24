@@ -1,0 +1,20 @@
+TÜBİTAK 2209-A Sonuç Raporu Malzemeleri
+
+Bu klasör sonuç raporu hazırlanırken kullanılacak çalışma notlarını ve kanıtları bir araya getirir. Yöntem ve kapsam için ilk başvuru formu, başlıklar için 2209-A sonuç raporu şablonu esas alınır.
+
+Şablonla eşleştirme
+- Genel Bilgiler: Proje konusu, yürütücü, danışman ve resmî başlangıç/bitiş tarihleri.
+- Giriş / Proje konusu hakkında kısa bilgi: Başvurudaki problem, amaç ve kapsam.
+- Rapor dönemlerinde yapılan çalışmalar: Dönem notları, veri hazırlama tablosu, yazılım diyagramları, uygulama ekranları ve deney düzeneği fotoğrafları.
+- Sonuç: Bağımsız T5 değerlendirmesi ve deney kutusu bulguları elde edildikçe. Ticari depo testi ve deney kutusu sonuçları ayrı sunulur.
+- Çıktılar: Gerçekleşen yazılım, prototip, varsa yayın ve sunumlar.
+- Harcama kalemleri: Gerçekleşen harcamalar ve belgeleri. Tarih ve imzalar teslim aşamasında tamamlanır.
+
+Her tamamlanan adım için dönem notuna tarih, başvuru bölüm numarası, yapılan işlem, doğrulama ve kanıt dosyasının adını ekle. Bir görsel eklerken dosya adı, çekim tarihi veya kaynak sürümü ve kısa açıklamasını kaydet. Başvuruya göre farklılık oluşursa gerekçesi ve etkisiyle kaydet.
+
+İlk kaynaklar
+- Proje kökünün üst klasöründeki TÜBİTAK araştırma önerisi PDF'si.
+- 2209-a_sonuc_raporu_formati.docx (bu klasördeki şablon kopyası).
+- Mendeley Data v2, DOI 10.17632/h4sghvyjyt.2.
+
+Deney fotoğrafları için çekim listesi: düzeneğin genel görünümü, SHT45 konumu, DS18B20 probunun elma kabuğuna teması ve kutu dışındaki ESP32 bağlantısı. Arayüz ekran görüntülerine kaynağın kayıt oynatma veya canlı sensör olduğu yazılır. Fatura ve imzalı belgeler yayımlanmadan önce kişisel bilgiler yönünden gözden geçirilir.

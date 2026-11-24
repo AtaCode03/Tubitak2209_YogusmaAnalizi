@@ -1,0 +1,16 @@
+Kayıt oynatma ve deney yönetimi arayüzü
+Durum kaydı: 24 Kasım 2026
+Sonuç raporu bölümü: Rapor dönemlerinde yapılan çalışmalar
+Başvuru dayanağı: §2.8, §2.9 ve İP3
+
+Streamlit içinde izleme, deney yönetimi, geçmiş kayıtlar ve yöntem karşılaştırması ekranları oluşturuldu. İzleme ekranında T4 kayıtları sırasıyla gösterilir ve üç yöntemin kararları mevcut DPU durumundan ayrı sunulur. Bir risk kararı ilk kez ekrana geldiğinde gösterim zamanı oynatma veritabanına yazılır. Bu zaman deney kutusundaki uyarı gecikmesi hesabında kullanılmaz.
+
+Deney yönetiminde deney başlatma ve bitirme ile kapak ve ürün işlemlerini kaydetme eklendi. Geçmiş kayıtlar deney ve UTC tarih aralığına göre filtrelenir. Ölçüm ve tahminler ile müdahaleler iki ayrı CSV olarak dışa aktarılır. Karşılaştırma ekranında T4 kesinlik, duyarlılık, F1 ve yanlış alarm oranı gösterilir.
+
+Doğrulama: 32 test geçti. Gerçek oynatma verisinin yalıtılmış kopyasında uyarı görüntülendi, ilk gösterim zamanının korunduğu doğrulandı ve iki CSV indirme denetimi kontrol edildi. Kanıt: 03_Tablolar_ve_Kanitlar/Adim_09_arayuz_dogrulamasi.json.
+
+Arayüz güncellemesi: Mevcut DPU durumu ve erken uyarılar ayrı alanlara taşındı. DPU grafiğine sıfır sınırı ve yöntem uyarısı işaretleri eklendi. Kullanıcı sonraki uyarıya atlayabilir veya sıcaklık ve bağıl nem grafiklerini açabilir. Tarihçe ekranındaki sütunlar kullanıcı terimleriyle gösterilir, T4 karşılaştırmasında grafiğin ölçütü seçilebilir.
+
+Görsel kanıt: 04_Fotograflar_ve_Ekranlar/Adim_09_izleme_uyari.png. T4 oynatma ekranında 13 Mart 2025 saat 12.10 UTC'de mevcut DPU pozitifken doğrusal eğim yönteminin verdiği 15 dakikalık erken uyarı görülür. Bu görüntü kayıt oynatmadan alınmıştır.
+
+Kullanılabilirlik düzeltmesi: Ölçüm anları arasında kartlar geçerli en son tahmini üretim saatiyle gösterir. Kartta karar yoksa bekleme, geçmiş pencere veya mevcut risk durumu açıklanır. Oynatma seçicisinde sensör kodu yerine örnek kayıt numarası, tarih ve tahmin süresi gösterilir. 35 test geçti. Tarayıcıda uyarının bir sonraki ölçüm anında da aynı saatle gösterildiği doğrulandı. Görsel: 04_Fotograflar_ve_Ekranlar/Adim_09_izleme_kartlari.png.

@@ -1,0 +1,10 @@
+Ortak tahmin süresi seçiminin yazılım hazırlığı
+Durum kaydı: 24 Kasım 2026
+Sonuç raporu bölümü: Rapor dönemlerinde yapılan çalışmalar
+Başvuru dayanağı: §2.6, §2.10.2 ve İP4
+
+Beş gerçek müdahale süresinden en uzun süreye 30 saniye ekleyen ve T4 üzerinden ortak tahmin süresini seçen yazılım hazırlandı. Olay başlangıcından önceki son beş dakikada üç sürede ortak değerlendirme adımı bulunan olaylar seçime alınır. Her süre için üç yöntemin zamanında uyarı oranlarının ortalaması kullanılır. Eşitlikte 24 sensör saati başına ortalama yanlış alarm oranı, ardından daha kısa tahmin süresi tercih edilir.
+
+T4'te 26 risk olayı arasında 25 olayın ortak süre seçimi için uygun olduğu doğrulandı. Gerçek müdahale süresi ölçülmediğinden tahmin süresi seçilmedi ve ana deney ayarları sabitlenmedi. Geçici denemede üç modelin ayar ve özet bilgilerle birlikte sabitlenmesi, aynı dizine yeniden yazmanın engellenmesi ve değiştirilmiş modelin reddedilmesi doğrulandı.
+
+40 yazılım testi geçti. Kanıt: 03_Tablolar_ve_Kanitlar/Adim_11_secim_hazirlik_raporu.json.

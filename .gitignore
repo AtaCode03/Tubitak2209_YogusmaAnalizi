@@ -6,4 +6,5 @@ data/processed/*
 data/runtime/*
 models/*
 logs/*
+raporaeklenecekler/2209-a_sonuc_raporu_formati.docx
 !**/.gitkeep

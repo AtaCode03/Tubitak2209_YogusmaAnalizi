@@ -3,3 +3,17 @@ gatherUsageStats = false
 
 [server]
 address = "127.0.0.1"
+
+[theme]
+base = "light"
+primaryColor = "#006B61"
+backgroundColor = "#F4F8F7"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#142B2D"
+font = "sans serif"
+
+[theme.sidebar]
+backgroundColor = "#123336"
+secondaryBackgroundColor = "#24484B"
+textColor = "#F0FAF8"
+primaryColor = "#8BE5CB"

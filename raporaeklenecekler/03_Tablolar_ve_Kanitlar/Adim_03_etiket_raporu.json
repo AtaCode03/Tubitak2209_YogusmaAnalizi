@@ -1,0 +1,238 @@
+{
+  "train": {
+    "median_interval_seconds_by_series": {
+      "T2.LoraB": 163.72350001335144,
+      "T2.LoraC": 162.0,
+      "T2.LoraD": 153.0,
+      "T2.LoraE": 152.12700009346008,
+      "T2.LoraF": 161.22000002861023,
+      "T2.LoraG": 30.69700002670288,
+      "T2.LoraH": 159.41299986839294,
+      "T2.LoraI": 142.56900000572205,
+      "T2.LoraJ": 136.13100004196167,
+      "T2.LoraK": 147.0,
+      "T3.LoraA": 57.3235000371933,
+      "T3.LoraB": 65.14750003814697,
+      "T3.LoraC": 65.05299997329712,
+      "T3.LoraD": 61.01600003242493,
+      "T3.LoraE": 60.96499991416931,
+      "T3.LoraG": 60.848000049591064,
+      "T3.LoraH": 63.72099995613098,
+      "T3.LoraI": 57.093000173568726,
+      "T3.LoraK": 58.806999921798706,
+      "T3.LoraL": 61.96900010108948,
+      "T3.LoraM": 58.646000146865845,
+      "T3.NucW": 29.866000175476074
+    },
+    "by_event_duration_seconds": {
+      "120": {
+        "events": 78,
+        "labels": {
+          "5": {
+            "negative": 243219,
+            "incomplete_followup": 25575,
+            "positive": 163
+          },
+          "10": {
+            "negative": 230414,
+            "incomplete_followup": 38212,
+            "positive": 331
+          },
+          "15": {
+            "negative": 219572,
+            "incomplete_followup": 48910,
+            "positive": 475
+          }
+        }
+      },
+      "0": {
+        "events": 190,
+        "labels": {
+          "5": {
+            "negative": 249100,
+            "incomplete_followup": 19450,
+            "positive": 407
+          },
+          "10": {
+            "negative": 235321,
+            "incomplete_followup": 32873,
+            "positive": 763
+          },
+          "15": {
+            "negative": 222964,
+            "incomplete_followup": 44942,
+            "positive": 1051
+          }
+        }
+      },
+      "300": {
+        "events": 48,
+        "labels": {
+          "5": {
+            "negative": 235974,
+            "incomplete_followup": 32873,
+            "positive": 110
+          },
+          "10": {
+            "negative": 223768,
+            "incomplete_followup": 44942,
+            "positive": 247
+          },
+          "15": {
+            "negative": 214017,
+            "incomplete_followup": 54574,
+            "positive": 366
+          }
+        }
+      }
+    }
+  },
+  "validation": {
+    "median_interval_seconds_by_series": {
+      "T4.LoraA": 57.28999996185303,
+      "T4.LoraB": 65.11700010299683,
+      "T4.LoraE": 60.86500000953674,
+      "T4.LoraG": 60.90299987792969,
+      "T4.LoraH": 63.7279999256134,
+      "T4.LoraI": 57.057000041007996,
+      "T4.LoraL": 61.9779999256134,
+      "T4.LoraM": 58.59299993515015
+    },
+    "by_event_duration_seconds": {
+      "120": {
+        "events": 26,
+        "labels": {
+          "5": {
+            "negative": 44987,
+            "incomplete_followup": 277,
+            "positive": 119
+          },
+          "10": {
+            "negative": 44678,
+            "incomplete_followup": 461,
+            "positive": 244
+          },
+          "15": {
+            "negative": 44389,
+            "incomplete_followup": 638,
+            "positive": 356
+          }
+        }
+      },
+      "0": {
+        "events": 42,
+        "labels": {
+          "5": {
+            "negative": 45000,
+            "incomplete_followup": 204,
+            "positive": 179
+          },
+          "10": {
+            "negative": 44640,
+            "incomplete_followup": 387,
+            "positive": 356
+          },
+          "15": {
+            "negative": 44298,
+            "incomplete_followup": 567,
+            "positive": 518
+          }
+        }
+      },
+      "300": {
+        "events": 15,
+        "labels": {
+          "5": {
+            "negative": 44919,
+            "incomplete_followup": 387,
+            "positive": 77
+          },
+          "10": {
+            "negative": 44663,
+            "incomplete_followup": 567,
+            "positive": 153
+          },
+          "15": {
+            "negative": 44408,
+            "incomplete_followup": 748,
+            "positive": 227
+          }
+        }
+      }
+    }
+  },
+  "test": {
+    "median_interval_seconds_by_series": {
+      "T5.LoraA": 57.31500005722046,
+      "T5.LoraB": 65.12899994850159,
+      "T5.LoraE": 60.837000131607056,
+      "T5.LoraG": 60.90700006484985,
+      "T5.LoraH": 63.73799991607666,
+      "T5.LoraI": 57.075000047683716,
+      "T5.LoraL": 61.9539999961853,
+      "T5.LoraM": 58.670000076293945
+    },
+    "by_event_duration_seconds": {
+      "120": {
+        "events": 312,
+        "labels": {
+          "5": {
+            "negative": 376483,
+            "incomplete_followup": 7290,
+            "positive": 1081
+          },
+          "10": {
+            "negative": 371588,
+            "incomplete_followup": 11124,
+            "positive": 2142
+          },
+          "15": {
+            "negative": 367022,
+            "incomplete_followup": 14666,
+            "positive": 3166
+          }
+        }
+      },
+      "0": {
+        "events": 815,
+        "labels": {
+          "5": {
+            "negative": 376490,
+            "incomplete_followup": 5733,
+            "positive": 2631
+          },
+          "10": {
+            "negative": 370526,
+            "incomplete_followup": 9602,
+            "positive": 4726
+          },
+          "15": {
+            "negative": 364969,
+            "incomplete_followup": 13266,
+            "positive": 6619
+          }
+        }
+      },
+      "300": {
+        "events": 206,
+        "labels": {
+          "5": {
+            "negative": 374546,
+            "incomplete_followup": 9602,
+            "positive": 706
+          },
+          "10": {
+            "negative": 370134,
+            "incomplete_followup": 13266,
+            "positive": 1454
+          },
+          "15": {
+            "negative": 365681,
+            "incomplete_followup": 16973,
+            "positive": 2200
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "series": {
+    "T2.LoraB": {
+      "valid": 3148,
+      "missing_measurement": 67
+    },
+    "T2.LoraC": {
+      "duplicate_rows": 1,
+      "valid": 51655,
+      "missing_measurement": 27,
+      "invalid_measurement": 21804
+    },
+    "T2.LoraD": {
+      "valid": 34069,
+      "missing_measurement": 965,
+      "invalid_measurement": 42061
+    },
+    "T2.LoraE": {
+      "valid": 11426,
+      "missing_measurement": 3,
+      "invalid_measurement": 46
+    },
+    "T2.LoraF": {
+      "valid": 6655
+    },
+    "T2.LoraG": {
+      "valid": 27773,
+      "invalid_measurement": 262
+    },
+    "T2.LoraH": {
+      "valid": 6472,
+      "missing_measurement": 3,
+      "invalid_measurement": 1
+    },
+    "T2.LoraI": {
+      "valid": 6761
+    },
+    "T2.LoraJ": {
+      "valid": 7179
+    },
+    "T2.LoraK": {
+      "valid": 19005,
+      "invalid_measurement": 67968,
+      "missing_measurement": 13
+    },
+    "T3.LoraA": {
+      "valid": 8198,
+      "missing_measurement": 23
+    },
+    "T3.LoraB": {
+      "valid": 7581
+    },
+    "T3.LoraC": {
+      "valid": 5920,
+      "invalid_measurement": 1631,
+      "missing_measurement": 3
+    },
+    "T3.LoraD": {
+      "valid": 4563,
+      "missing_measurement": 10,
+      "invalid_measurement": 3291
+    },
+    "T3.LoraE": {
+      "valid": 6386,
+      "missing_measurement": 58
+    },
+    "T3.LoraG": {
+      "valid": 8564
+    },
+    "T3.LoraH": {
+      "valid": 8185
+    },
+    "T3.LoraI": {
+      "valid": 9075
+    },
+    "T3.LoraK": {
+      "valid": 5609,
+      "invalid_measurement": 2583
+    },
+    "T3.LoraL": {
+      "valid": 7788
+    },
+    "T3.LoraM": {
+      "valid": 8420
+    },
+    "T3.NucW": {
+      "valid": 15814
+    },
+    "T4.LoraA": {
+      "valid": 6033,
+      "missing_measurement": 1
+    },
+    "T4.LoraB": {
+      "valid": 5324
+    },
+    "T4.LoraE": {
+      "valid": 5648
+    },
+    "T4.LoraG": {
+      "valid": 5699
+    },
+    "T4.LoraH": {
+      "valid": 5448
+    },
+    "T4.LoraI": {
+      "valid": 6081
+    },
+    "T4.LoraL": {
+      "valid": 5555,
+      "missing_measurement": 1
+    },
+    "T4.LoraM": {
+      "valid": 5920
+    },
+    "T5.LoraA": {
+      "valid": 38863,
+      "missing_measurement": 436
+    },
+    "T5.LoraB": {
+      "valid": 49905,
+      "missing_measurement": 2
+    },
+    "T5.LoraE": {
+      "valid": 53515,
+      "missing_measurement": 2
+    },
+    "T5.LoraG": {
+      "valid": 33257,
+      "missing_measurement": 299
+    },
+    "T5.LoraH": {
+      "valid": 48902,
+      "missing_measurement": 3741
+    },
+    "T5.LoraI": {
+      "valid": 56828,
+      "missing_measurement": 2
+    },
+    "T5.LoraL": {
+      "valid": 52612,
+      "missing_measurement": 2
+    },
+    "T5.LoraM": {
+      "valid": 55598,
+      "missing_measurement": 2
+    }
+  },
+  "missing_sensor_files": [
+    "T2.LogV"
+  ],
+  "partitions": {
+    "train": {
+      "valid": 270246,
+      "missing_measurement": 1172,
+      "series": 22,
+      "duplicate_rows": 1,
+      "invalid_measurement": 139647
+    },
+    "validation": {
+      "valid": 45708,
+      "missing_measurement": 2,
+      "series": 8
+    },
+    "test": {
+      "valid": 389480,
+      "missing_measurement": 4486,
+      "series": 8
+    }
+  }
+}

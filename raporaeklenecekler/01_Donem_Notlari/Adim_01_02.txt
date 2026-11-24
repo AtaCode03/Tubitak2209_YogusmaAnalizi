@@ -1,0 +1,19 @@
+Ortak ölçüm hesapları ve veri hazırlama
+Durum kaydı: 23 Kasım 2026
+Sonuç raporu bölümü: Rapor dönemlerinde yapılan çalışmalar
+Başvuru dayanağı: §2.2, §2.4.1, §2.4.2 ve İP1
+
+Ortam sıcaklığı, bağıl nem ve elma yüzey sıcaklığı için ortak bir ölçüm yapısı oluşturuldu. Magnus bağıntısıyla çiğ noktası, yüzey sıcaklığından çiğ noktası çıkarılarak Yoğuşma Riski Değeri (DPU) hesaplandı. Elle girilen ölçümlerle hesabın kontrol edilebildiği yerel bir ekran hazırlandı. Bu ekran anlık koşulun kontrolünde kullanılır.
+
+Ticari elma deposu veri setinin ikinci sürümü içe aktarıldı. Özgün ölçüm zamanları Unix zaman damgasından UTC'ye çevrildi. Seriler kendi içinde zaman sırasına alındı ve başvurudaki ortak UTC sınırları uygulandı. Geçersiz ölçümlerin zamanları veri kesintilerinin sonraki analizde görülebilmesi için korundu.
+
+Bölüm                 Seri   Geçerli ölçüm
+Eğitim (T2–T3)          22         270.246
+Doğrulama (T4)           8          45.708
+Bağımsız test (T5)       8         389.480
+Toplam                  38         705.434
+
+Başvurudaki eğitim ön sayımı 270.247 idi. İçe aktarmada aynı zaman damgasına sahip bir yinelenen kayıt tekilleştirildi. Başvuruda belirtilen 0 < RH ≤ 100 koşulu uygulandı. Test bölümü içe aktarma sırasında ayrı dosyaya hazırlandı. Bu aşamada model başarısı hesaplanmadı.
+
+Doğrulama: 15 yazılım testi geçti. Kaynak arşivin SHA-256 değeri yayımlanan değerle eşleşti.
+Kanıtlar: 03_Tablolar_ve_Kanitlar/Adim_02_ice_aktarma_raporu.json ve 02_Diyagramlar/Adim_02_veri_akisi.svg.

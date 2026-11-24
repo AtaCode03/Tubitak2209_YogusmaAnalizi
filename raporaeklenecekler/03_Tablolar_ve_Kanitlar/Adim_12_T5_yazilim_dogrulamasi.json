@@ -1,0 +1,12 @@
+{
+  "synthetic_only": true,
+  "synthetic_series": 2,
+  "horizons_checked": [
+    5,
+    10,
+    15
+  ],
+  "complete_primary_blocks": 2,
+  "complete_sensitivity_blocks": 1,
+  "real_t5_evaluation_run": false
+}

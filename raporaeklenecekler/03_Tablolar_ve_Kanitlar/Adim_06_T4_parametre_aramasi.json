@@ -1,0 +1,4148 @@
+{
+  "training_periods": [
+    "T2",
+    "T3"
+  ],
+  "validation_period": "T4",
+  "sklearn_version": "1.9.1",
+  "random_seed": 42,
+  "by_horizon_minutes": {
+    "5": {
+      "common_steps": 17666,
+      "candidates": [
+        {
+          "method": "threshold",
+          "parameters": {
+            "margin_c": 0.5
+          },
+          "metrics": {
+            "tp": 47,
+            "fp": 10289,
+            "fn": 1,
+            "tn": 7329,
+            "precision": 0.004547213622291021,
+            "recall": 0.9791666666666666,
+            "f1": 0.009052388289676425,
+            "alarm_periods": 546,
+            "false_alarm_periods": 543,
+            "false_alarms_per_24_sensor_hours": 17.704517151590625
+          }
+        },
+        {
+          "method": "threshold",
+          "parameters": {
+            "margin_c": 1
+          },
+          "metrics": {
+            "tp": 48,
+            "fp": 14244,
+            "fn": 0,
+            "tn": 3374,
+            "precision": 0.0033585222502099076,
+            "recall": 1.0,
+            "f1": 0.0066945606694560665,
+            "alarm_periods": 525,
+            "false_alarm_periods": 523,
+            "false_alarms_per_24_sensor_hours": 17.05241707234235
+          }
+        },
+        {
+          "method": "threshold",
+          "parameters": {
+            "margin_c": 1.5
+          },
+          "metrics": {
+            "tp": 48,
+            "fp": 15909,
+            "fn": 0,
+            "tn": 1709,
+            "precision": 0.003008084226358338,
+            "recall": 1.0,
+            "f1": 0.005998125585754452,
+            "alarm_periods": 460,
+            "false_alarm_periods": 458,
+            "false_alarms_per_24_sensor_hours": 14.933091814785463
+          }
+        },
+        {
+          "method": "threshold",
+          "parameters": {
+            "margin_c": 2
+          },
+          "metrics": {
+            "tp": 48,
+            "fp": 16713,
+            "fn": 0,
+            "tn": 905,
+            "precision": 0.002863790943261142,
+            "recall": 1.0,
+            "f1": 0.005711226128859539,
+            "alarm_periods": 311,
+            "false_alarm_periods": 309,
+            "false_alarms_per_24_sensor_hours": 10.074946224385826
+          }
+        },
+        {
+          "method": "linear",
+          "parameters": {
+            "window_minutes": 5
+          },
+          "metrics": {
+            "tp": 13,
+            "fp": 812,
+            "fn": 35,
+            "tn": 16806,
+            "precision": 0.01575757575757576,
+            "recall": 0.2708333333333333,
+            "f1": 0.029782359679266894,
+            "alarm_periods": 486,
+            "false_alarm_periods": 473,
+            "false_alarms_per_24_sensor_hours": 15.422166874221668
+          }
+        },
+        {
+          "method": "linear",
+          "parameters": {
+            "window_minutes": 10
+          },
+          "metrics": {
+            "tp": 11,
+            "fp": 626,
+            "fn": 37,
+            "tn": 16992,
+            "precision": 0.01726844583987441,
+            "recall": 0.22916666666666666,
+            "f1": 0.032116788321167884,
+            "alarm_periods": 385,
+            "false_alarm_periods": 374,
+            "false_alarms_per_24_sensor_hours": 12.194271481942716
+          }
+        },
+        {
+          "method": "linear",
+          "parameters": {
+            "window_minutes": 15
+          },
+          "metrics": {
+            "tp": 8,
+            "fp": 426,
+            "fn": 40,
+            "tn": 17192,
+            "precision": 0.018433179723502304,
+            "recall": 0.16666666666666666,
+            "f1": 0.03319502074688797,
+            "alarm_periods": 248,
+            "false_alarm_periods": 240,
+            "false_alarms_per_24_sensor_hours": 7.825200950979283
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 100,
+            "max_depth": 5,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 157209,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 200,
+            "max_depth": 5,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 157209,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 100,
+            "max_depth": 5,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 157209,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 200,
+            "max_depth": 5,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 157209,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 100,
+            "max_depth": 5,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 157209,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 200,
+            "max_depth": 5,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 157209,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 100,
+            "max_depth": 10,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 157209,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 200,
+            "max_depth": 10,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 157209,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 100,
+            "max_depth": 10,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 157209,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 200,
+            "max_depth": 10,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 157209,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 100,
+            "max_depth": 10,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 157209,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 200,
+            "max_depth": 10,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 157209,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 157209,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 157209,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 157209,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 157209,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 157209,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 157209,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 100,
+            "max_depth": 5,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 148602,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 200,
+            "max_depth": 5,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 148602,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 100,
+            "max_depth": 5,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 148602,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 200,
+            "max_depth": 5,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 148602,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 100,
+            "max_depth": 5,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 148602,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 200,
+            "max_depth": 5,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 148602,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 100,
+            "max_depth": 10,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 148602,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 200,
+            "max_depth": 10,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 148602,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 100,
+            "max_depth": 10,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 148602,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 200,
+            "max_depth": 10,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 148602,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 100,
+            "max_depth": 10,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 148602,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 200,
+            "max_depth": 10,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 148602,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 148602,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 148602,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 148602,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 148602,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 148602,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 148602,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 100,
+            "max_depth": 5,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 141036,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 200,
+            "max_depth": 5,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 141036,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 100,
+            "max_depth": 5,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 141036,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 200,
+            "max_depth": 5,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 141036,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 100,
+            "max_depth": 5,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 141036,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 200,
+            "max_depth": 5,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 141036,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 100,
+            "max_depth": 10,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 141036,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 200,
+            "max_depth": 10,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 141036,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 100,
+            "max_depth": 10,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 141036,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 200,
+            "max_depth": 10,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 141036,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 100,
+            "max_depth": 10,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 141036,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 200,
+            "max_depth": 10,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 141036,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 141036,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 141036,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 141036,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 141036,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 141036,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 141036,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        }
+      ],
+      "selected": {
+        "threshold": {
+          "method": "threshold",
+          "parameters": {
+            "margin_c": 0.5
+          },
+          "metrics": {
+            "tp": 47,
+            "fp": 10289,
+            "fn": 1,
+            "tn": 7329,
+            "precision": 0.004547213622291021,
+            "recall": 0.9791666666666666,
+            "f1": 0.009052388289676425,
+            "alarm_periods": 546,
+            "false_alarm_periods": 543,
+            "false_alarms_per_24_sensor_hours": 17.704517151590625
+          }
+        },
+        "linear": {
+          "method": "linear",
+          "parameters": {
+            "window_minutes": 15
+          },
+          "metrics": {
+            "tp": 8,
+            "fp": 426,
+            "fn": 40,
+            "tn": 17192,
+            "precision": 0.018433179723502304,
+            "recall": 0.16666666666666666,
+            "f1": 0.03319502074688797,
+            "alarm_periods": 248,
+            "false_alarm_periods": 240,
+            "false_alarms_per_24_sensor_hours": 7.825200950979283
+          }
+        },
+        "random_forest": {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 100,
+            "max_depth": 5,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 157209,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 48,
+            "tn": 17618,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        }
+      }
+    },
+    "10": {
+      "common_steps": 17596,
+      "candidates": [
+        {
+          "method": "threshold",
+          "parameters": {
+            "margin_c": 0.5
+          },
+          "metrics": {
+            "tp": 92,
+            "fp": 10204,
+            "fn": 3,
+            "tn": 7297,
+            "precision": 0.008935508935508936,
+            "recall": 0.968421052631579,
+            "f1": 0.01770763160427293,
+            "alarm_periods": 546,
+            "false_alarm_periods": 543,
+            "false_alarms_per_24_sensor_hours": 17.77494885201182
+          }
+        },
+        {
+          "method": "threshold",
+          "parameters": {
+            "margin_c": 1
+          },
+          "metrics": {
+            "tp": 95,
+            "fp": 14139,
+            "fn": 0,
+            "tn": 3362,
+            "precision": 0.006674160460868344,
+            "recall": 1.0,
+            "f1": 0.013259822737106568,
+            "alarm_periods": 522,
+            "false_alarm_periods": 520,
+            "false_alarms_per_24_sensor_hours": 17.022050466015003
+          }
+        },
+        {
+          "method": "threshold",
+          "parameters": {
+            "margin_c": 1.5
+          },
+          "metrics": {
+            "tp": 95,
+            "fp": 15797,
+            "fn": 0,
+            "tn": 1704,
+            "precision": 0.005977850490812987,
+            "recall": 1.0,
+            "f1": 0.011884656283230124,
+            "alarm_periods": 458,
+            "false_alarm_periods": 456,
+            "false_alarms_per_24_sensor_hours": 14.927028870197772
+          }
+        },
+        {
+          "method": "threshold",
+          "parameters": {
+            "margin_c": 2
+          },
+          "metrics": {
+            "tp": 95,
+            "fp": 16599,
+            "fn": 0,
+            "tn": 902,
+            "precision": 0.0056906673056187854,
+            "recall": 1.0,
+            "f1": 0.011316933706593603,
+            "alarm_periods": 310,
+            "false_alarm_periods": 308,
+            "false_alarms_per_24_sensor_hours": 10.082291429870425
+          }
+        },
+        {
+          "method": "linear",
+          "parameters": {
+            "window_minutes": 5
+          },
+          "metrics": {
+            "tp": 16,
+            "fp": 1436,
+            "fn": 79,
+            "tn": 16065,
+            "precision": 0.011019283746556474,
+            "recall": 0.16842105263157894,
+            "f1": 0.02068519715578539,
+            "alarm_periods": 690,
+            "false_alarm_periods": 676,
+            "false_alarms_per_24_sensor_hours": 22.128665605819503
+          }
+        },
+        {
+          "method": "linear",
+          "parameters": {
+            "window_minutes": 10
+          },
+          "metrics": {
+            "tp": 17,
+            "fp": 1181,
+            "fn": 78,
+            "tn": 16320,
+            "precision": 0.014190317195325543,
+            "recall": 0.17894736842105263,
+            "f1": 0.026295436968290797,
+            "alarm_periods": 534,
+            "false_alarm_periods": 520,
+            "false_alarms_per_24_sensor_hours": 17.022050466015003
+          }
+        },
+        {
+          "method": "linear",
+          "parameters": {
+            "window_minutes": 15
+          },
+          "metrics": {
+            "tp": 18,
+            "fp": 956,
+            "fn": 77,
+            "tn": 16545,
+            "precision": 0.018480492813141684,
+            "recall": 0.18947368421052632,
+            "f1": 0.03367633302151544,
+            "alarm_periods": 442,
+            "false_alarm_periods": 430,
+            "false_alarms_per_24_sensor_hours": 14.075926346897022
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 100,
+            "max_depth": 5,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 148603,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 200,
+            "max_depth": 5,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 148603,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 100,
+            "max_depth": 5,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 148603,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 200,
+            "max_depth": 5,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 148603,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 100,
+            "max_depth": 5,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 148603,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 200,
+            "max_depth": 5,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 148603,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 100,
+            "max_depth": 10,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 148603,
+          "metrics": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 95,
+            "tn": 17500,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 1,
+            "false_alarm_periods": 1,
+            "false_alarms_per_24_sensor_hours": 0.032734712434644236
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 200,
+            "max_depth": 10,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 148603,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 100,
+            "max_depth": 10,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 148603,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 200,
+            "max_depth": 10,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 148603,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 100,
+            "max_depth": 10,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 148603,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 200,
+            "max_depth": 10,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 148603,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 148603,
+          "metrics": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 95,
+            "tn": 17500,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 1,
+            "false_alarm_periods": 1,
+            "false_alarms_per_24_sensor_hours": 0.032734712434644236
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 148603,
+          "metrics": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 95,
+            "tn": 17500,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 1,
+            "false_alarm_periods": 1,
+            "false_alarms_per_24_sensor_hours": 0.032734712434644236
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 148603,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 148603,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 148603,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 148603,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 100,
+            "max_depth": 5,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 141038,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 200,
+            "max_depth": 5,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 141038,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 100,
+            "max_depth": 5,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 141038,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 200,
+            "max_depth": 5,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 141038,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 100,
+            "max_depth": 5,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 141038,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 200,
+            "max_depth": 5,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 141038,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 100,
+            "max_depth": 10,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 141038,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 200,
+            "max_depth": 10,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 141038,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 100,
+            "max_depth": 10,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 141038,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 200,
+            "max_depth": 10,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 141038,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 100,
+            "max_depth": 10,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 141038,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 200,
+            "max_depth": 10,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 141038,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 141038,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 141038,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 141038,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 141038,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 141038,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 141038,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 100,
+            "max_depth": 5,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 134548,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 200,
+            "max_depth": 5,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 134548,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 100,
+            "max_depth": 5,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 134548,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 200,
+            "max_depth": 5,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 134548,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 100,
+            "max_depth": 5,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 134548,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 200,
+            "max_depth": 5,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 134548,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 100,
+            "max_depth": 10,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 134548,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 200,
+            "max_depth": 10,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 134548,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 100,
+            "max_depth": 10,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 134548,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 200,
+            "max_depth": 10,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 134548,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 100,
+            "max_depth": 10,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 134548,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 200,
+            "max_depth": 10,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 134548,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 134548,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 134548,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 134548,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 134548,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 134548,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 134548,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        }
+      ],
+      "selected": {
+        "threshold": {
+          "method": "threshold",
+          "parameters": {
+            "margin_c": 0.5
+          },
+          "metrics": {
+            "tp": 92,
+            "fp": 10204,
+            "fn": 3,
+            "tn": 7297,
+            "precision": 0.008935508935508936,
+            "recall": 0.968421052631579,
+            "f1": 0.01770763160427293,
+            "alarm_periods": 546,
+            "false_alarm_periods": 543,
+            "false_alarms_per_24_sensor_hours": 17.77494885201182
+          }
+        },
+        "linear": {
+          "method": "linear",
+          "parameters": {
+            "window_minutes": 15
+          },
+          "metrics": {
+            "tp": 18,
+            "fp": 956,
+            "fn": 77,
+            "tn": 16545,
+            "precision": 0.018480492813141684,
+            "recall": 0.18947368421052632,
+            "f1": 0.03367633302151544,
+            "alarm_periods": 442,
+            "false_alarm_periods": 430,
+            "false_alarms_per_24_sensor_hours": 14.075926346897022
+          }
+        },
+        "random_forest": {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 100,
+            "max_depth": 5,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 148603,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 95,
+            "tn": 17501,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        }
+      }
+    },
+    "15": {
+      "common_steps": 17526,
+      "candidates": [
+        {
+          "method": "threshold",
+          "parameters": {
+            "margin_c": 0.5
+          },
+          "metrics": {
+            "tp": 137,
+            "fp": 10116,
+            "fn": 6,
+            "tn": 7267,
+            "precision": 0.013361942845996294,
+            "recall": 0.958041958041958,
+            "f1": 0.026356290881108118,
+            "alarm_periods": 545,
+            "false_alarm_periods": 541,
+            "false_alarms_per_24_sensor_hours": 17.780212256076688
+          }
+        },
+        {
+          "method": "threshold",
+          "parameters": {
+            "margin_c": 1
+          },
+          "metrics": {
+            "tp": 143,
+            "fp": 14035,
+            "fn": 0,
+            "tn": 3348,
+            "precision": 0.010086048808012414,
+            "recall": 1.0,
+            "f1": 0.019970672439075483,
+            "alarm_periods": 521,
+            "false_alarm_periods": 519,
+            "false_alarms_per_24_sensor_hours": 17.057172201300926
+          }
+        },
+        {
+          "method": "threshold",
+          "parameters": {
+            "margin_c": 1.5
+          },
+          "metrics": {
+            "tp": 143,
+            "fp": 15685,
+            "fn": 0,
+            "tn": 1698,
+            "precision": 0.009034622188526662,
+            "recall": 1.0,
+            "f1": 0.01790745726629516,
+            "alarm_periods": 458,
+            "false_alarm_periods": 456,
+            "false_alarms_per_24_sensor_hours": 14.986648408079425
+          }
+        },
+        {
+          "method": "threshold",
+          "parameters": {
+            "margin_c": 2
+          },
+          "metrics": {
+            "tp": 143,
+            "fp": 16485,
+            "fn": 0,
+            "tn": 898,
+            "precision": 0.008599951888381044,
+            "recall": 1.0,
+            "f1": 0.017053246675809434,
+            "alarm_periods": 309,
+            "false_alarm_periods": 307,
+            "false_alarms_per_24_sensor_hours": 10.089695309825402
+          }
+        },
+        {
+          "method": "linear",
+          "parameters": {
+            "window_minutes": 5
+          },
+          "metrics": {
+            "tp": 27,
+            "fp": 1956,
+            "fn": 116,
+            "tn": 15427,
+            "precision": 0.01361573373676248,
+            "recall": 0.1888111888111888,
+            "f1": 0.02539981185324553,
+            "alarm_periods": 920,
+            "false_alarm_periods": 902,
+            "false_alarms_per_24_sensor_hours": 29.64464224580623
+          }
+        },
+        {
+          "method": "linear",
+          "parameters": {
+            "window_minutes": 10
+          },
+          "metrics": {
+            "tp": 26,
+            "fp": 1543,
+            "fn": 117,
+            "tn": 15840,
+            "precision": 0.0165710643722116,
+            "recall": 0.18181818181818182,
+            "f1": 0.030373831775700934,
+            "alarm_periods": 657,
+            "false_alarm_periods": 641,
+            "false_alarms_per_24_sensor_hours": 21.066757959602874
+          }
+        },
+        {
+          "method": "linear",
+          "parameters": {
+            "window_minutes": 15
+          },
+          "metrics": {
+            "tp": 33,
+            "fp": 1270,
+            "fn": 110,
+            "tn": 16113,
+            "precision": 0.02532617037605526,
+            "recall": 0.23076923076923078,
+            "f1": 0.04564315352697095,
+            "alarm_periods": 512,
+            "false_alarm_periods": 498,
+            "false_alarms_per_24_sensor_hours": 16.366997603560424
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 100,
+            "max_depth": 5,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 141040,
+          "metrics": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 143,
+            "tn": 17382,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 1,
+            "false_alarm_periods": 1,
+            "false_alarms_per_24_sensor_hours": 0.0328654570352619
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 200,
+            "max_depth": 5,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 141040,
+          "metrics": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 143,
+            "tn": 17382,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 1,
+            "false_alarm_periods": 1,
+            "false_alarms_per_24_sensor_hours": 0.0328654570352619
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 100,
+            "max_depth": 5,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 141040,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 200,
+            "max_depth": 5,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 141040,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 100,
+            "max_depth": 5,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 141040,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 200,
+            "max_depth": 5,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 141040,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 100,
+            "max_depth": 10,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 141040,
+          "metrics": {
+            "tp": 1,
+            "fp": 3,
+            "fn": 142,
+            "tn": 17380,
+            "precision": 0.25,
+            "recall": 0.006993006993006993,
+            "f1": 0.013605442176870748,
+            "alarm_periods": 4,
+            "false_alarm_periods": 3,
+            "false_alarms_per_24_sensor_hours": 0.09859637110578569
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 200,
+            "max_depth": 10,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 141040,
+          "metrics": {
+            "tp": 0,
+            "fp": 3,
+            "fn": 143,
+            "tn": 17380,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 3,
+            "false_alarm_periods": 3,
+            "false_alarms_per_24_sensor_hours": 0.09859637110578569
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 100,
+            "max_depth": 10,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 141040,
+          "metrics": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 143,
+            "tn": 17382,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 1,
+            "false_alarm_periods": 1,
+            "false_alarms_per_24_sensor_hours": 0.0328654570352619
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 200,
+            "max_depth": 10,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 141040,
+          "metrics": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 143,
+            "tn": 17382,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 1,
+            "false_alarm_periods": 1,
+            "false_alarms_per_24_sensor_hours": 0.0328654570352619
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 100,
+            "max_depth": 10,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 141040,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 200,
+            "max_depth": 10,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 141040,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 141040,
+          "metrics": {
+            "tp": 0,
+            "fp": 2,
+            "fn": 143,
+            "tn": 17381,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 2,
+            "false_alarm_periods": 2,
+            "false_alarms_per_24_sensor_hours": 0.0657309140705238
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 141040,
+          "metrics": {
+            "tp": 0,
+            "fp": 2,
+            "fn": 143,
+            "tn": 17381,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 2,
+            "false_alarm_periods": 2,
+            "false_alarms_per_24_sensor_hours": 0.0657309140705238
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 141040,
+          "metrics": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 143,
+            "tn": 17382,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 1,
+            "false_alarm_periods": 1,
+            "false_alarms_per_24_sensor_hours": 0.0328654570352619
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 141040,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 141040,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 5,
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 141040,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 100,
+            "max_depth": 5,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 134551,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 200,
+            "max_depth": 5,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 134551,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 100,
+            "max_depth": 5,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 134551,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 200,
+            "max_depth": 5,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 134551,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 100,
+            "max_depth": 5,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 134551,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 200,
+            "max_depth": 5,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 134551,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 100,
+            "max_depth": 10,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 134551,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 200,
+            "max_depth": 10,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 134551,
+          "metrics": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 143,
+            "tn": 17382,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 1,
+            "false_alarm_periods": 1,
+            "false_alarms_per_24_sensor_hours": 0.0328654570352619
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 100,
+            "max_depth": 10,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 134551,
+          "metrics": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 143,
+            "tn": 17382,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 1,
+            "false_alarm_periods": 1,
+            "false_alarms_per_24_sensor_hours": 0.0328654570352619
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 200,
+            "max_depth": 10,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 134551,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 100,
+            "max_depth": 10,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 134551,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 200,
+            "max_depth": 10,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 134551,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 134551,
+          "metrics": {
+            "tp": 0,
+            "fp": 3,
+            "fn": 143,
+            "tn": 17380,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 2,
+            "false_alarm_periods": 2,
+            "false_alarms_per_24_sensor_hours": 0.0657309140705238
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 134551,
+          "metrics": {
+            "tp": 0,
+            "fp": 3,
+            "fn": 143,
+            "tn": 17380,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 2,
+            "false_alarm_periods": 2,
+            "false_alarms_per_24_sensor_hours": 0.0657309140705238
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 134551,
+          "metrics": {
+            "tp": 0,
+            "fp": 2,
+            "fn": 143,
+            "tn": 17381,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 1,
+            "false_alarm_periods": 1,
+            "false_alarms_per_24_sensor_hours": 0.0328654570352619
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 134551,
+          "metrics": {
+            "tp": 0,
+            "fp": 2,
+            "fn": 143,
+            "tn": 17381,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 1,
+            "false_alarm_periods": 1,
+            "false_alarms_per_24_sensor_hours": 0.0328654570352619
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 134551,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 10,
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 134551,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 100,
+            "max_depth": 5,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 128790,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 200,
+            "max_depth": 5,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 128790,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 100,
+            "max_depth": 5,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 128790,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 200,
+            "max_depth": 5,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 128790,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 100,
+            "max_depth": 5,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 128790,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 200,
+            "max_depth": 5,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 128790,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 100,
+            "max_depth": 10,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 128790,
+          "metrics": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 143,
+            "tn": 17382,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 1,
+            "false_alarm_periods": 1,
+            "false_alarms_per_24_sensor_hours": 0.0328654570352619
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 200,
+            "max_depth": 10,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 128790,
+          "metrics": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 143,
+            "tn": 17382,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 1,
+            "false_alarm_periods": 1,
+            "false_alarms_per_24_sensor_hours": 0.0328654570352619
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 100,
+            "max_depth": 10,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 128790,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 200,
+            "max_depth": 10,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 128790,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 100,
+            "max_depth": 10,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 128790,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 200,
+            "max_depth": 10,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 128790,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 128790,
+          "metrics": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 142,
+            "tn": 17382,
+            "precision": 0.5,
+            "recall": 0.006993006993006993,
+            "f1": 0.013793103448275862,
+            "alarm_periods": 2,
+            "false_alarm_periods": 1,
+            "false_alarms_per_24_sensor_hours": 0.0328654570352619
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 128790,
+          "metrics": {
+            "tp": 1,
+            "fp": 3,
+            "fn": 142,
+            "tn": 17380,
+            "precision": 0.25,
+            "recall": 0.006993006993006993,
+            "f1": 0.013605442176870748,
+            "alarm_periods": 3,
+            "false_alarm_periods": 2,
+            "false_alarms_per_24_sensor_hours": 0.0657309140705238
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 128790,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_leaf": 5
+          },
+          "training_rows": 128790,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 128790,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        },
+        {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_leaf": 10
+          },
+          "training_rows": 128790,
+          "metrics": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 143,
+            "tn": 17383,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "alarm_periods": 0,
+            "false_alarm_periods": 0,
+            "false_alarms_per_24_sensor_hours": 0.0
+          }
+        }
+      ],
+      "selected": {
+        "threshold": {
+          "method": "threshold",
+          "parameters": {
+            "margin_c": 0.5
+          },
+          "metrics": {
+            "tp": 137,
+            "fp": 10116,
+            "fn": 6,
+            "tn": 7267,
+            "precision": 0.013361942845996294,
+            "recall": 0.958041958041958,
+            "f1": 0.026356290881108118,
+            "alarm_periods": 545,
+            "false_alarm_periods": 541,
+            "false_alarms_per_24_sensor_hours": 17.780212256076688
+          }
+        },
+        "linear": {
+          "method": "linear",
+          "parameters": {
+            "window_minutes": 15
+          },
+          "metrics": {
+            "tp": 33,
+            "fp": 1270,
+            "fn": 110,
+            "tn": 16113,
+            "precision": 0.02532617037605526,
+            "recall": 0.23076923076923078,
+            "f1": 0.04564315352697095,
+            "alarm_periods": 512,
+            "false_alarm_periods": 498,
+            "false_alarms_per_24_sensor_hours": 16.366997603560424
+          }
+        },
+        "random_forest": {
+          "method": "random_forest",
+          "parameters": {
+            "window_minutes": 15,
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_leaf": 1
+          },
+          "training_rows": 128790,
+          "metrics": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 142,
+            "tn": 17382,
+            "precision": 0.5,
+            "recall": 0.006993006993006993,
+            "f1": 0.013793103448275862,
+            "alarm_periods": 2,
+            "false_alarm_periods": 1,
+            "false_alarms_per_24_sensor_hours": 0.0328654570352619
+          }
+        }
+      }
+    }
+  }
+}

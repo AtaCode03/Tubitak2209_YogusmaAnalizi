@@ -1,0 +1,9 @@
+ESP32 USB ölçüm protokolü
+
+30 saniyede bir 115200 baud, 8N1 seri bağlantıda tek ASCII satırı gönderilir.
+Şema: M1,sira,calisma_ms,ortam_C,bagil_nem_yuzde,yuzey_C,bos_RAM_bayt\n
+Örnek: M1,42,1260000,10.20,88.50,9.50,184320\n
+
+Ondalık ayırıcı noktadır. Sıra numarası her ölçüm girişiminde artar. Bir sensör okuması başarısızsa o sıra için geçerli ölçüm gönderilmez. Çalışma süresi ve serbest heap bayt cinsinden bilgisayarda takip edilir; bilgisayar ölçüm saatini UTC olarak atar. Çalışma süresinin azalması yeni kart oturumu olarak ele alınır. Satır en fazla 96 ASCII bayt ve satır sonu içermelidir.
+
+ESP32 tarafında tek sabit 97 baytlık karakter tamponu kullanılabilir. Biçimlendirmenin tam sığdığı kontrol edildikten sonra satır sonuyla birlikte seri porta yazılır. Geçmiş ölçümler bilgisayarda tutulur. Kartın ve sensör bağlantılarının kesin modeli belirlendiğinde firmware yükleme ve gerçek heap testi yapılır.

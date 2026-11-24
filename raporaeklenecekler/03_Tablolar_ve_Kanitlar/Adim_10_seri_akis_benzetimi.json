@@ -1,0 +1,18 @@
+{
+  "simulated": true,
+  "test_counts": {
+    "stored_measurements": 79,
+    "threshold_predictions": 16,
+    "linear_waiting": 12,
+    "random_forest_waiting": 12,
+    "linear_predictions": 4,
+    "linear_warnings": 4,
+    "random_forest_predictions": 4,
+    "interruptions": 2
+  },
+  "dropped_packets": 3,
+  "first_post_gap_linear_prediction": "2026-11-24T15:20:00.000000+00:00",
+  "resumed_at": "2026-11-24T15:03:30+00:00",
+  "physical_database_isolated": true,
+  "live_ui_verified": true
+}

@@ -1,0 +1,21 @@
+{
+  "experiment_id": 1,
+  "source": "T4.LoraA",
+  "requested_rows": 500,
+  "stored_measurements": 499,
+  "predictions_by_method": {
+    "threshold": 185,
+    "linear": 167,
+    "random_forest": 167
+  },
+  "warnings_by_method": {
+    "threshold": 0,
+    "linear": 20,
+    "random_forest": 0
+  },
+  "matching_offline_decisions": {
+    "threshold": 153,
+    "linear": 153,
+    "random_forest": 153
+  }
+}

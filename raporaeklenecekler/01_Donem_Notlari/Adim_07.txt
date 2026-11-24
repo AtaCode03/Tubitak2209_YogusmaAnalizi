@@ -1,0 +1,10 @@
+Deney kayıt veritabanı
+Durum kaydı: 24 Kasım 2026
+Sonuç raporu bölümü: Rapor dönemlerinde yapılan çalışmalar
+Başvuru dayanağı: §2.7 ve İP2
+
+SQLite üzerinde deney, ölçüm, deney olayı, yöntem ayarı ve tahmin tabloları kuruldu. Dört yabancı anahtar, ölçüm ve müdahaleleri deneye, tahminleri ise ilgili ölçüme ve yöntem ayarına bağlar. Zaman damgaları UTC biçiminde saklanır. Uyarının üretildiği ve ilk gösterildiği zamanlar ayrı alanlarda korunur.
+
+Yazılım testlerinde örnek deney kaydı üzerinden ölçüm ve yöntem kararları birlikte sorgulandı, müdahaleler ayrı CSV olarak dışa aktarıldı ve tarih filtresi doğrulandı. İlk gösterim zamanı ikinci bildirimle değişmedi. İlişkisiz ölçüm veya tahmin ekleme denemeleri reddedildi. Örnek kayıtlar test veritabanında kullanıldı; proje veritabanı deney kaydına hazır, boş durumda bırakıldı.
+
+Doğrulama: 31 yazılım testi geçti. Kanıtlar: 02_Diyagramlar/Adim_07_veritabani_iliskileri.mmd ve 03_Tablolar_ve_Kanitlar/Adim_07_veritabani_dogrulamasi.json.

@@ -1,0 +1,12 @@
+Tahmin adımları ve geçmiş ölçüm pencereleri
+Durum kaydı: 24 Kasım 2026
+Sonuç raporu bölümü: Rapor dönemlerinde yapılan çalışmalar
+Başvuru dayanağı: §2.4.2, §2.5.2, §2.5.3 ve §2.10.2
+
+Ticari depo ölçümleri, Unix zaman başlangıcına hizalanan 150 saniyelik UTC adımlarına aktarıldı. Her adımda yalnızca o ana kadar alınmış son geçerli ölçüm seçildi. Ölçüm yaşı serinin medyan örnekleme aralığının iki katını aşarsa veya veri kesintisi varsa pencere sıfırlandı. Pencereler iki uç dahil 5, 10 ve 15 dakika için sırasıyla 3, 5 ve 7 adım içerir.
+
+Ortam sıcaklığı, bağıl nem, yüzey sıcaklığı ve DPU için güncel değer, pencere ortalaması, standart sapma, ilk-son değişimi ve dakika başına doğrusal eğim hesaplandı. Özellikler ile gelecekten hesaplanan referans etiketleri ayrı dosyalara yazıldı. Üç geçmiş pencerenin de hazır olduğu ve ilgili referans etiketinin hesaplandığı adımlar ortak karşılaştırma için sayıldı.
+
+Doğrulama: 23 test geçti. Yeni testlerde gelecekteki ölçümün geçmiş girdileri değiştirmediği, süresi dolmuş ölçümün pencereyi sıfırladığı ve yeni geçerli veri bloğunun önceki bloğun geçmişini kullanmadığı doğrulandı.
+
+Kanıt: 03_Tablolar_ve_Kanitlar/Adim_04_pencere_raporu.json. Sayaçlar eğitim, doğrulama ve test bölümleri için ayrı tutulur. Model eğitimi ve T5 başarı ölçümü henüz yapılmadı.

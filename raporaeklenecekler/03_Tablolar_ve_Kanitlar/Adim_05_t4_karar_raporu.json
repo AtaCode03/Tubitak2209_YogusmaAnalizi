@@ -1,0 +1,31 @@
+{
+  "partition": "T4",
+  "threshold_candidates_c": [
+    0.5,
+    1,
+    1.5,
+    2
+  ],
+  "linear_windows_minutes": [
+    5,
+    10,
+    15
+  ],
+  "counts_by_horizon_minutes": {
+    "5": {
+      "common_steps": 17666,
+      "negative_reference": 17618,
+      "positive_reference": 48
+    },
+    "10": {
+      "common_steps": 17596,
+      "negative_reference": 17501,
+      "positive_reference": 95
+    },
+    "15": {
+      "common_steps": 17526,
+      "negative_reference": 17383,
+      "positive_reference": 143
+    }
+  }
+}

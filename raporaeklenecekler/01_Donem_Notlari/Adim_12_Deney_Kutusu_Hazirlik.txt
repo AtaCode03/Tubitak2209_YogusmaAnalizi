@@ -1,0 +1,12 @@
+Deney kutusu değerlendirmesinin yazılım hazırlığı
+Durum kaydı: 24 Kasım 2026
+Sonuç raporu bölümü: Rapor dönemlerinde yapılan çalışmalar
+Başvuru dayanağı: §2.3, §2.9, §2.10.3 ve İP5
+
+Deney kutusu için ayrı bir değerlendirme raporu hazırlandı. Tamamlanan kayıtlar sabitlenmiş model ve yöntem ayarlarıyla karşılaştırılır. Deney olaylarından müdahale veya kontrol başlangıcı bulunur. Kod, en az 15 dakika kesintisiz ön kayıt, başlangıçta pozitif DPU ve en az 20 dakika takip koşullarını denetler. Kapak açık kalma süresi kaydedilir. Bilinen bağlantı ve paket sorunları ölçüm dizisini keser.
+
+Erken uyarı süresi, risk başlangıcı ile ilgili uyarının ekranda ilk gösterildiği zaman arasından hesaplanır. Ölçümün bilgisayara ulaşmasından gösterime kadar geçen süre ayrıca raporlanır. Her deneme ayrı gösterilir. Senaryo bazındaki tekrar sayıları ve toplu ölçütler, T5 raporundan ayrı tutulur.
+
+47 yazılım testi geçti. Geçici veritabanında 145 yapay ölçümlü bir kontrol örneği kullanıldı. Bir risk olayı ve iki saniyelik örnek gösterim gecikmesi doğru hesaplandı. Tek denemenin üçer tekrar koşulunu karşılamadığı doğrulandı. Gerçek deney, ayar sabitleme ve fiziksel doğrulamalar beklenmektedir.
+
+Kanıt: 03_Tablolar_ve_Kanitlar/Adim_12_deney_kutusu_yazilim_dogrulamasi.json.

@@ -1,0 +1,45 @@
+{
+  "tables": [
+    "experiment_events",
+    "experiments",
+    "measurements",
+    "method_settings",
+    "predictions"
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "experiment_events",
+      "from_column": "experiment_id",
+      "to_table": "experiments",
+      "to_column": "id"
+    },
+    {
+      "from_table": "measurements",
+      "from_column": "experiment_id",
+      "to_table": "experiments",
+      "to_column": "id"
+    },
+    {
+      "from_table": "predictions",
+      "from_column": "setting_id",
+      "to_table": "method_settings",
+      "to_column": "id"
+    },
+    {
+      "from_table": "predictions",
+      "from_column": "measurement_id",
+      "to_table": "measurements",
+      "to_column": "id"
+    }
+  ],
+  "foreign_keys_enabled": true,
+  "integrity_check": "ok",
+  "foreign_key_violations": [],
+  "runtime_row_counts": {
+    "experiment_events": 0,
+    "experiments": 0,
+    "measurements": 0,
+    "method_settings": 0,
+    "predictions": 0
+  }
+}

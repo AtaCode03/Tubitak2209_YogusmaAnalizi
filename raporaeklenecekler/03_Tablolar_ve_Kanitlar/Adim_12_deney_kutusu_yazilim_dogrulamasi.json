@@ -1,0 +1,9 @@
+{
+  "synthetic_database_only": true,
+  "measurement_rows": 145,
+  "common_steps": 15,
+  "verified_display_delay_seconds": 2,
+  "detected_risk_events": 1,
+  "incomplete_repetition_warning_verified": true,
+  "real_trials_evaluated": 0
+}

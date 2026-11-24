@@ -1,0 +1,11 @@
+Güvenlik paylı eşik ve doğrusal eğim yöntemleri
+Durum kaydı: 24 Kasım 2026
+Sonuç raporu bölümü: Rapor dönemlerinde yapılan çalışmalar
+Başvuru dayanağı: §2.5.1, §2.5.2, §2.6 ve §2.10.2
+
+Güvenlik paylı eşik yöntemi 0 < DPU < δ koşuluyla çalıştırıldı. Doğrusal eğim yönteminde, eğim negatifse ve DPU + eğim × tahmin süresi sıfırın altındaysa risk kararı üretildi. Geçerli pozitif DPU bulunmadığında veya eğim için gerekli geçmiş eksik olduğunda ilgili tahmin üretilmedi.
+
+T4 doğrulama verisinde 0,5 / 1 / 1,5 / 2 °C güvenlik payları ve 5 / 10 / 15 dakikalık eğim pencereleri için kararlar üretildi. Geçerli etiketi olan ortak adım sayıları 5, 10 ve 15 dakikalık tahmin süreleri için sırasıyla 17.666, 17.596 ve 17.526 idi. Her aday aynı tahmin süresinde aynı referans kayıtlarıyla eşleştirildi.
+
+26 yazılım testi geçti. Aday ayar seçimi ve başarı ölçümü sonraki aşamada yapılacaktır.
+Kanıt: 03_Tablolar_ve_Kanitlar/Adim_05_t4_karar_raporu.json.
